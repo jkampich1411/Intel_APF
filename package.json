@@ -1,0 +1,19 @@
+{
+  "name": "intel_apf",
+  "description": "Library that implements the Intel(r) AMT Port Forwarding Protocol",
+  "version": "1.0.0",
+  "module": "lib/index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "bun run bundle.bun.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "uuid": "^11.1.0"
+  }
+}
