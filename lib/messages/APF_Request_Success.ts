@@ -15,6 +15,8 @@ export default class APF_Request_Success extends Message {
     let pos = 0;
 
     buf.writeUIntBE(this.type, pos, pos += 1);
+    if(this.boundPort)
+      buf.writeUintBE(this.boundPort, pos, pos += 1);
     
     return buf;
   }
